@@ -574,7 +574,7 @@ static const NSTimeInterval kIdleTimeout = 60.0;
     if (proto) {
       [self handleStreamMessage:proto];
     } else {
-      [_rpc finishWithError:error];
+      [self->_rpc finishWithError:error];
     }
   }];
 }
