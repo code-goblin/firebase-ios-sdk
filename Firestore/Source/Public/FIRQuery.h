@@ -17,10 +17,10 @@
 #import <Foundation/Foundation.h>
 
 #import "FIRListenerRegistration.h"
+#import "FIRSource.h"
 
 @class FIRFieldPath;
 @class FIRFirestore;
-@class FIRGetOptions;
 @class FIRQuerySnapshot;
 @class FIRDocumentSnapshot;
 
@@ -92,7 +92,7 @@ NS_SWIFT_NAME(Query)
     NS_SWIFT_NAME(getDocuments(completion:));
 
 // clang-format off
-- (void)getDocumentsWithOptions:(FIRGetOptions *)options completion:(FIRQuerySnapshotBlock)completion
+- (void)getDocumentsWithSource:(FIRSource)source completion:(FIRQuerySnapshotBlock)completion
     NS_SWIFT_NAME(getDocuments(options:completion:));
 // clang-format on
 
